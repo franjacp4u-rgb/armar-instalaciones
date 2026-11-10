@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armar Instalaciones - Catálogo Visual</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #1a1a1a; /* Fondo industrial oscuro */
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 450px;
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        /* Encabezado de la Empresa */
+        .profile-header {
+            text-align: center;
+            padding: 20px 0 5px 0;
+        }
+        .profile-header img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e63946; /* Borde rojo fuego */
+        }
+        .profile-header h1 {
+            font-size: 20px;
+            margin-top: 10px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+        .profile-header p {
+            font-size: 13px;
+            color: #a0a0a0;
+            margin-top: 2px;
+        }
+        /* Cajas de Galería (Fotos y Videos de Equipos) */
+        .media-box {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            background: #2a2a2a;
+        }
+        .media-box img, .media-box video {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        /* Botón de WhatsApp Destacado */
+        .cta-button {
+            background: #25D366; 
+            color: white;
+            text-align: center;
+            padding: 16px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.1s ease;
+        }
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- LOGO Y ENCABEZADO -->
+        <div class="profile-header">
+            <img src="logo.jpeg" alt="Logo Armar Instalaciones">
+            <h1>Armar Instalaciones</h1>
+            <p>@ArmarInstalaciones</p>
+        </div>
+
+        <!-- 🎥 VIDEO 1 (Ej. Demostración de uso o recarga de extintor) -->
+        <div class="media-box">
+            <video autoplay loop muted playsinline>
+                <source src="armar-video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- 🖼️ IMAGEN 1 (Ej. Tipos de extintores / Equipos disponibles) -->
+        <div class="media-box">
+            <img src="foto1.jpeg" alt="Equipos de Protección contra Incendios">
+        </div>
+
+        <!-- 🎥 VIDEO 2 (Ej. Pruebas de sistemas o mantenimiento) -->
+<!--
+        <div class="media-box">
+            <video autoplay loop muted playsinline>
+                <source src="video2.mp4" type="video/mp4">
+            </video>
+        </div>
+-->
+        <!-- 🖼️ IMAGEN 2 (Ej. Servicios de instalación / Señalética) -->
+        <div class="media-box">
+            <img src="banner-armar-02.jpeg" alt="Instalaciones y Mantenimiento">
+        </div>
+
+        <!-- 🟢 BOTÓN DE CONTACTO DIRECTO -->
+        <!-- REEMPLAZA EL NÚMERO 521234567890 CON EL TUYO (Incluye código de país, sin el +) -->
+        <a href="https://wa.me" target="_blank" class="cta-button">
+            💬 Cotizar por WhatsApp
+        </a>
+
+    </div>
+
+</body>
+</html>
